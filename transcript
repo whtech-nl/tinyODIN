@@ -1,0 +1,182 @@
+# Compile of aer_out.v was successful.
+# Compile of controller.v was successful.
+# Compile of fifo.v was successful.
+# Compile of lif_neuron.v was successful.
+# Compile of neuron_core.v was successful.
+# Compile of scheduler.v was successful.
+# Compile of spi_slave.v was successful.
+# Compile of synaptic_core.v was successful.
+# Compile of tbench.sv was successful.
+# Compile of tinyODIN.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.tbench
+# vsim -gui work.tbench 
+# Start time: 08:42:41 on Oct 22,2025
+# Loading sv_std.std
+# Loading work.tbench
+# Loading work.tinyODIN
+# Loading work.aer_out
+# Loading work.spi_slave
+# Loading work.controller
+# Loading work.scheduler
+# Loading work.fifo
+# Loading work.synaptic_core
+# Loading work.SRAM_8192x32_wrapper
+# Loading work.neuron_core
+# Loading work.lif_neuron
+# Loading work.SRAM_256x32_wrapper
+add wave -position end  sim:/tbench/CLK
+add wave -position end  sim:/tbench/RST
+add wave -position end  sim:/tbench/SPI_config_rdy
+add wave -position end  sim:/tbench/SPI_param_checked
+add wave -position end  sim:/tbench/SNN_initialized_rdy
+add wave -position end  sim:/tbench/SCK
+add wave -position end  sim:/tbench/MOSI
+add wave -position end  sim:/tbench/MISO
+add wave -position end  sim:/tbench/AERIN_ADDR
+add wave -position end  sim:/tbench/AEROUT_ADDR
+add wave -position end  sim:/tbench/AERIN_REQ
+add wave -position end  sim:/tbench/AERIN_ACK
+add wave -position end  sim:/tbench/AEROUT_REQ
+add wave -position end  sim:/tbench/AEROUT_ACK
+add wave -position end  sim:/tbench/SCHED_FULL
+add wave -position end  sim:/tbench/synapse_pattern
+add wave -position end  sim:/tbench/syn_data
+add wave -position end  sim:/tbench/neuron_pattern
+add wave -position end  sim:/tbench/neur_data
+add wave -position end  sim:/tbench/shift_amt
+add wave -position end  sim:/tbench/addr_temp
+add wave -position end  sim:/tbench/spi_read_data
+add wave -position end  sim:/tbench/param_leak_str
+add wave -position end  sim:/tbench/param_thr
+add wave -position end  sim:/tbench/mem_init
+add wave -position end  sim:/tbench/target_neurons
+add wave -position end  sim:/tbench/input_neurons
+add wave -position end  sim:/tbench/aer_neur_spk
+add wave -position end  sim:/tbench/vcore
+add wave -position end  sim:/tbench/time_window_check
+add wave -position end  sim:/tbench/auto_ack_verbose
+add wave -position end  sim:/tbench/i
+add wave -position end  sim:/tbench/j
+add wave -position end  sim:/tbench/k
+add wave -position end  sim:/tbench/n
+add wave -position end  sim:/tbench/phase
+run -all
+# ----- Starting verification of programmed SNN parameters
+# ----- Ending verification of programmed SNN parameters, no error found!
+# ----- Starting programmation of neuron memory in the SNN through SPI.
+# programming neurons... (i=0/256)
+# programming neurons... (i=10/256)
+# programming neurons... (i=20/256)
+# programming neurons... (i=30/256)
+# programming neurons... (i=40/256)
+# programming neurons... (i=50/256)
+# programming neurons... (i=60/256)
+# programming neurons... (i=70/256)
+# programming neurons... (i=80/256)
+# programming neurons... (i=90/256)
+# programming neurons... (i=100/256)
+# programming neurons... (i=110/256)
+# programming neurons... (i=120/256)
+# programming neurons... (i=130/256)
+# programming neurons... (i=140/256)
+# programming neurons... (i=150/256)
+# programming neurons... (i=160/256)
+# programming neurons... (i=170/256)
+# programming neurons... (i=180/256)
+# programming neurons... (i=190/256)
+# programming neurons... (i=200/256)
+# programming neurons... (i=210/256)
+# programming neurons... (i=220/256)
+# programming neurons... (i=230/256)
+# programming neurons... (i=240/256)
+# programming neurons... (i=250/256)
+# ----- Ending programmation of neuron memory in the SNN through SPI.
+# ----- Starting verification of neuron memory in the SNN through SPI.
+# verifying neurons... (i=0/256)
+# verifying neurons... (i=10/256)
+# verifying neurons... (i=20/256)
+# verifying neurons... (i=30/256)
+# verifying neurons... (i=40/256)
+# verifying neurons... (i=50/256)
+# verifying neurons... (i=60/256)
+# verifying neurons... (i=70/256)
+# verifying neurons... (i=80/256)
+# verifying neurons... (i=90/256)
+# verifying neurons... (i=100/256)
+# verifying neurons... (i=110/256)
+# verifying neurons... (i=120/256)
+# verifying neurons... (i=130/256)
+# verifying neurons... (i=140/256)
+# verifying neurons... (i=150/256)
+# verifying neurons... (i=160/256)
+# verifying neurons... (i=170/256)
+# verifying neurons... (i=180/256)
+# verifying neurons... (i=190/256)
+# verifying neurons... (i=200/256)
+# verifying neurons... (i=210/256)
+# verifying neurons... (i=220/256)
+# verifying neurons... (i=230/256)
+# verifying neurons... (i=240/256)
+# verifying neurons... (i=250/256)
+# ----- Ending verification of neuron memory in the SNN through SPI, no error found!
+# ----- Starting programmation of all synapses in the SNN through SPI.
+# programming synapses... (i=0/8192)
+# programming synapses... (i=500/8192)
+# programming synapses... (i=1000/8192)
+# programming synapses... (i=1500/8192)
+# programming synapses... (i=2000/8192)
+# programming synapses... (i=2500/8192)
+# programming synapses... (i=3000/8192)
+# programming synapses... (i=3500/8192)
+# programming synapses... (i=4000/8192)
+# programming synapses... (i=4500/8192)
+# programming synapses... (i=5000/8192)
+# programming synapses... (i=5500/8192)
+# programming synapses... (i=6000/8192)
+# programming synapses... (i=6500/8192)
+# programming synapses... (i=7000/8192)
+# programming synapses... (i=7500/8192)
+# programming synapses... (i=8000/8192)
+# ----- Ending programmation of all synapses in the SNN through SPI.
+# ----- Starting verification of all synapses in the SNN through SPI.
+# verifying synapses... (i=0/8192)
+# verifying synapses... (i=500/8192)
+# verifying synapses... (i=1000/8192)
+# verifying synapses... (i=1500/8192)
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Git/tinyODIN original/wave.do}
+# verifying synapses... (i=2000/8192)
+# verifying synapses... (i=2500/8192)
+# verifying synapses... (i=3000/8192)
+# verifying synapses... (i=3500/8192)
+# verifying synapses... (i=4000/8192)
+# verifying synapses... (i=4500/8192)
+# verifying synapses... (i=5000/8192)
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Git/tinyODIN original/wave.do}
+# verifying synapses... (i=5500/8192)
+# verifying synapses... (i=6000/8192)
+# verifying synapses... (i=6500/8192)
+# verifying synapses... (i=7000/8192)
+# verifying synapses... (i=7500/8192)
+# verifying synapses... (i=8000/8192)
+# ----- Ending verification of all synapses in the SNN through SPI, no error found!
+# ----- Disabling neurons 0 to 255.
+# ----- Programming neurons done...
+# --- Starting phase           0.
+# ----- Starting programming of neurons 0,1,3,13,27,38,53,62,100,119,140,169,194,248,250,255.
+# ----- Starting stimulation pattern.
+# ----- Starting stimulation pattern.
+# --- Starting phase           1.
+# ----- Starting programming of neurons 0,1,3,13,27,38,53,62,100,119,140,169,194,248,250,255.
+# ----- Starting stimulation pattern.
+# ----- Starting stimulation pattern.
+# ----- NEURON OUTPUT SPIKE (FROM AER): Event from neuron   3
+# ----- NEURON OUTPUT SPIKE (FROM AER): Event from neuron   0
+# ----- NEURON OUTPUT SPIKE (FROM AER): Event from neuron   1
+# ----- NEURON OUTPUT SPIKE (FROM AER): Event from neuron   0
+# ----- No error found -- All tests passed! :-)
+# ** Note: $finish    : C:/Git/tinyODIN original/tbench.sv(552)
+#    Time: 145938501 ps  Iteration: 0  Instance: /tbench
+# 1
+# Break in Module tbench at C:/Git/tinyODIN original/tbench.sv line 552
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Git/tinyODIN original/wave.do}
